@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bicicletas.css">
+    <link rel="shortcut icon" href="logo.png" />
+    <title>ORBEA WILD FS H20 (PROCESO DE ENVIO)</title>
+</head>
+<body>
+    <br>
+    <ul class="titulo">
+        <h4 align="center">¡BICICLETAS DE ALTA GAMA AHORA A TU ALCANCE!</h4>
+    </ul>
+    <br>
+    <ul class="itemsMenu">
+        <div align="center">
+            <a href="index.html">
+                <img src="logo.png" width="20%" height="20%">
+            </a>
+        </div>
+    </ul>
+    <br><br><br>
+    <center>
+        <form id="registroForm" onsubmit="return validarFormulario()">
+            <h2>Realizar Pedido</h2>
+            <br><br>
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <select id="estado" required>
+                <option value="" disabled selected>Selecciona tu estado</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Ciudad de México">Ciudad de México</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Estado de México">Estado de México</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select>
+            <input type="text" id="ciudad" placeholder="Municipio" required>
+            <input type="text" id="colonia" placeholder="Colonia" required>
+            <input type="text" id="direccion" placeholder="Dirección" required>
+            <input type="number" id="codigoPostal" placeholder="Código Postal" required>
+            <input type="text" id="numeroContacto" placeholder="Número de contacto" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+            <input type="submit" value="Comprar">
+        </form>
+</center>
+<br><br><br><br><br><br><br>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <img class="imagenes" src="logo.png">
+            </div>
+            <div class="box">
+                <h3>Horarios:</h3>
+                <p>Lunes a viernes de 10:00 a 20:00hrs</p>
+                <p>Sábados de 10:00 a 14:00hrs</p>
+            </div>
+            <div class="box">
+                <h3>Contactanos:</h3>
+                <p>5630395425</p>
+                <p>5610746132</p>
+            </div>
+            <div class="box">
+                <h3>SIGUENOS</h3>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/profile.php?id=61555976156406&locale=es_LA" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>CicloVida</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script>
+        // Función para validar el formulario antes de enviarlo
+        function validarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var estado = document.getElementById("estado").value;
+            var ciudad = document.getElementById("ciudad").value;
+            var colonia = document.getElementById("colonia").value;
+            var direccion = document.getElementById("direccion").value;
+            var codigoPostal = document.getElementById("codigoPostal").value;
+            var numeroContacto = document.getElementById("numeroContacto").value;
+            var correo = document.getElementById("correo").value;
+
+            if (nombre === "" || estado === "" || ciudad === "" || colonia === "" || direccion === "" || codigoPostal === "" || numeroContacto === "" || correo === "") {
+                alert("Por favor completa todos los campos.");
+                return false;
+            } else {
+                setTimeout(function(){ window.location.href = "https://mpago.la/2eV5Vw3"; }, 500); // Redirige a la página de confirmación después de medio segundo
+                return false; // Evita el envío predeterminado del formulario
+            }
+        }
+    </script>
+</body>
+</html>
